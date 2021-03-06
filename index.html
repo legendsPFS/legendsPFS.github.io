@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ETHORD</title>
+        <title>LEGENDS PFS</title>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-              $("#ethordButton").click(function(){
-                $("#ethord").toggle();
-              });
-            });
-            </script>
+        <script type="text/javascript">
+            function checkPswd() {
+                var confirmPassword = "8531";
+                var password = document.getElementById("pswd").value;
+                if (password == confirmPassword) {
+                     window.location="legendsPFS.html";
+                }
+                else{
+                    alert("Passwords do not match.");
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -20,34 +25,12 @@
             <div id = "header">
                 <h1> LEGENDS </h1>
             </div>
-            <div id = "main-nav">
-                <button id ="ethordButton">ETHORD</button>
-                <button id ="socialMediaScripting>">Social Media Scripting</button>
-            </div>
-
-
-            <p id = "ethord"> 
-                The reason I’m calling is…</br>
-                &emsp;I’m Excited,</br>
-                &emsp;I’m in Training right now, and</br>
-                &emsp;I need your Help.</br>
-                &emsp;I’d like to hop On Zoom to just show you and your spouse what I’m doing...</br>
-                &emsp;Worst case scenario you can help me out with some Referrals.</br>
-                &emsp;What Day works best for you both, weekdays or weekends? 🛑...WFA</br>
-                &emsp;&emsp;6pm or 8pm? 🛑...WFA</br>
-                &emsp;Great, I’ll see you both on _______ at _______.</br>
-                &emsp;Can you make sure both of you are there so I can get credit for 
-my training? 🛑...WFA</br>
-&emsp;&emsp;I will send you the Zoom link; what’s your email?</br>
-&emsp;Thanks! See you then.</br>
-
-            </p>
-
-            <p id = "whatYouDo">
-                What you do
-            </p>
-
-            <p id = " "
+            <form>
+                <label for="pswd">Enter your password: </label>
+                <input type="password" id="pswd">
+                <input type="button" value="Submit" onclick="checkPswd();" />
+            </form>
+            
         </div>            
     </body>
 </html>
