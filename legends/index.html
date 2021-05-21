@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LEGENDS PFS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            function checkPswd() {
+                var confirmPassword = "8531";
+                var password = document.getElementById("pswd").value;
+                if (password == confirmPassword) {
+                     window.location="legendsPFS.html";
+                }
+                else{
+                    alert("Passwords do not match.");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id = "wrapper">
+            <div id = "header">
+                <h1> LEGENDS </h1>
+            </div>
+            <form>
+                <label for="pswd">Enter your password: </label>
+                <input type="number" id="pswd">
+                <input type="button" value="Submit" onclick="checkPswd();" />
+            </form>
+            
+        </div>            
+    </body>
+</html>

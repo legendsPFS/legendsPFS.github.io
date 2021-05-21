@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ETHORD</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+
+    <body>
+        <div id = "wrapper">
+            <div id = "header">
+                <h1> LEGENDS </h1>
+            </div>
+            <div id = "main-nav">
+                <button id = "ethordButton" class = "button">ETHORD</button>
+                <button id = "whatYouDoButton" class = "button">What is it / What are you doing?</button>
+
+            <button id = "spouseButton" class = "button">Let me talk with my spouse so I can get a time</button>
+            <button id = "noButton" class = "button">I'm Not Interested / I Already Have My Finances Set Up</button>
+            <button id = "whatCompanyButton" class = "button">What company are you with?</button>
+            <button id = "fnaButton" class = "button"> FNA </button>
+            <button id = "soundCloudButton" class = "button"> Sound Cloud </button>
+
+            </div>
+
+            <div id = "script">
+                <div id = "ethord"> 
+                    The reason I’m calling is…</br>
+                    &emsp;I’m Excited,</br>
+                    &emsp;I’m in Training right now, and</br>
+                    &emsp;I need your Help.</br>
+                    &emsp;I’d like to hop On Zoom to just show you and your spouse what I’m doing...</br>
+                    &emsp;Worst case scenario you can help me out with some Referrals.</br>
+                    &emsp;What Day works best for you both, weekdays or weekends? 🛑...WFA</br>
+                    &emsp;&emsp;6pm or 8pm? 🛑...WFA</br>
+                    &emsp;Great, I’ll see you both on _______ at _______.</br>
+                    &emsp;Can you make sure both of you are there so I can get credit for 
+    my training? 🛑...WFA</br>
+    &emsp;&emsp;I will send you the Zoom link; what’s your email?</br>
+    &emsp;Thanks! See you then.</br>
+
+                </div>
+                
+                <div id = "whatYouDo"> 
+                    <h2 id = "ethordSubtitle">What is it / What are you doing?</h2></br>
+                    I’m learning how to help people get out of debt and plan for retirement, but right now I just need to learn how to answer people’s questions.</br>
+                    </br>
+                    - So can we get together for about 30-45 minutes this week?🛑...WFA</br></br>
+                    - Are weekdays or weekends better for you?🛑...WFA</br>
+                </br>
+                    Great, I’ll see you both on _______ at _______.</br>
+                    Can you make sure both of you are there so I can get credit for 
+    my training? 🛑...WFA</br>
+    &emsp;I will send you the Zoom link; what’s your email?</br>
+    Thanks! See you then.</br>
+            </div>
+
+                <div id = "spouse">
+                    <h2 id = "ethordSubtitle">Let Me Talk With My Spouse First So I Can Get A Time</h2></br>
+                    I understand. But if you had to guess, what would be a better day for you both, weekdays or weekends? 🛑...WFA</br></br>
+                    On a ________ or __________? 🛑...WFA</br></br>
+                    6pm or 8pm?</br></br>
+                    Let’s pencil it in for __________ at __________ (o’clock) and if that doesn’t work, call me and we will reschedule.</br></br>
+                    Can you make sure both of you are there so I can get credit for 
+    my training? 🛑...WFA</br></br>
+    &emsp;I will send you the Zoom link; what’s your email?</br></br>
+    Thanks! See you then.</br></br>
+                </div>
+
+                <div id = "no">
+                    <h2 id = "ethordSubtitle">I’m Not Interested / I Already Have My Finances Set Up.</h2></br>
+                    I thought you might say that. That’s why I want to hop on a Zoom with you. I just want to show you guys what I’m doing. If it’s for you... great, if not, that’s fine too. Absolutely no pressure. I just need your help getting my name out there.</br></br>
+                    Would you do that for me?🛑...WFA</br></br>
+                    &emsp;What Day works best for you both, weekdays or weekends? 🛑...WFA</br>
+                    &emsp;&emsp;6pm or 8pm? 🛑...WFA</br>
+                    &emsp;Great, I’ll see you both on _______ at _______.</br>
+                    &emsp;Can you make sure both of you are there so I can get credit for 
+    my training? 🛑...WFA</br>
+                </div>
+                
+                <div id = "whatCompany">
+                    <h2 id = "ethordSubtitle">What company are you with?</h2></br>
+                    Oh, yea, I’m with PFS, I’m working out of Joey & Paige Prescott’s office, DO YOU KNOW JOEY AND PAIGE? <img src="images/yieldsign.PNG" alt="yieldSign" width="1.8%" height="1.8%">...WFA</br></br>
+
+                    I just need some help to get my name out there. Would you do that for me? <img src="images/yieldsign.PNG" alt="yieldSign" width="1.8%" height="1.8%">...WFA</br></br>
+                
+                    I just need to learn how to answer people’s question. 
+                    Which Day works best for you both, weekdays or weekends? 🛑...WFA</br></br>
+                    &emsp;6pm or 8pm? 🛑...WFA</br></br>
+                    Great, I’ll see you both on _______ at _______.</br></br>
+                    Can you make sure both of you are there so I can get credit for my training? 🛑...WFA</br></br>
+                    &emsp;I will send you the Zoom link; what’s your email?</br></br>
+                    Thanks! See you then.</br>            
+                </div>
+
+                <div id = "fna"> 
+                    <h1>Financial Needs Analysis</br></h1>
+                    <h1><a href="pdfs/fna.pdf">FNA PDF Download</a></h1>
+                    <img src="images/fna.png" alt="fna" width=90%/>
+                </div>
+
+                <div id = "soundCloud"> 
+                    <h1>Sound Cloud Links</br></h1>
+                    Coming Soon
+                </div>
+            </div>    
+        </div>
+        
+        <script>
+            $(document).ready(function(){
+                document.getElementById("ethord").hidden = true;
+                document.getElementById("whatYouDo").hidden = true;
+                document.getElementById("spouse").hidden = true;
+                document.getElementById("no").hidden = true;
+                document.getElementById("whatCompany").hidden = true;
+                document.getElementById("fna").hidden = true;
+                document.getElementById("soundCloud").hidden = true;
+
+              $("#ethordButton").click(function(){
+                  $("#ethord").toggle();
+                  $("#whatYouDo").hide();
+                  $("#spouse").hide();
+                  $("#no").hide();
+                  $("#whatCompany").hide();
+                  $("#fna").hide();
+                  $("#soundCloud").hide();
+              });
+
+              $("#whatYouDoButton").click(function(){
+                  $("#whatYouDo").toggle();
+                  $("#ethord").hide();
+                  $("#spouse").hide();
+                  $("#no").hide();
+                  $("#whatCompany").hide();
+                  $("#fna").hide();
+                  $("#soundCloud").hide();
+              });
+
+              $("#spouseButton").click(function(){
+                  $("#spouse").toggle();
+                  $("#ethord").hide();
+                  $("#whatYouDo").hide();
+                  $("#no").hide();
+                  $("#whatCompany").hide();
+                  $("#fna").hide();
+                  $("#soundCloud").hide();
+              });
+
+              $("#noButton").click(function(){
+                  $("#no").toggle();                  
+                  $("#whatYouDo").hide();
+                  $("#ethord").hide();
+                  $("#whatYouDo").hide();
+                  $("#spouse").hide();
+                  $("#whatCompany").hide();
+                  $("#fna").hide();
+                  $("#soundCloud").hide();
+              });
+
+              $("#whatCompanyButton").click(function(){
+                $("#whatCompany").toggle();                  
+                $("#whatYouDo").hide();
+                $("#ethord").hide();
+                $("#spouse").hide();
+                $("#no").hide();
+                $("#fna").hide();
+                $("#soundCloud").hide();
+              });
+
+              $("#fnaButton").click(function(){
+                  $("#fna").toggle();                  
+                  $("#whatYouDo").hide();
+                  $("#ethord").hide();
+                  $("#whatYouDo").hide();
+                  $("#spouse").hide();
+                  $("#whatCompany").hide();
+                  $("#no").hide();
+                  $("#soundCloud").hide();
+              });
+
+              $("#soundCloudButton").click(function(){
+                  $("#soundCloud").toggle();                  
+                  $("#whatYouDo").hide();
+                  $("#ethord").hide();
+                  $("#whatYouDo").hide();
+                  $("#spouse").hide();
+                  $("#whatCompany").hide();
+                  $("#no").hide();
+                  $("#fna").hide();
+              });
+            });
+        </script>
+    </body>
+</html>
