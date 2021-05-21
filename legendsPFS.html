@@ -21,6 +21,8 @@
             <button id = "spouseButton" class = "button">Let me talk with my spouse so I can get a time</button>
             <button id = "noButton" class = "button">I'm Not Interested / I Already Have My Finances Set Up</button>
             <button id = "whatCompanyButton" class = "button">What company are you with?</button>
+            <button id = "fnaButton" class = "button"> FNA </button>
+            <button id = "soundCloudButton" class = "button"> Sound Cloud </button>
 
             </div>
 
@@ -93,6 +95,17 @@
                     &emsp;I will send you the Zoom link; what’s your email?</br></br>
                     Thanks! See you then.</br>            
                 </div>
+
+                <div id = "fna"> 
+                    <h1>Financial Needs Analysis</br></h1>
+                    <h1><a href="pdfs/fna.pdf">FNA PDF Download</a></h1>
+                    <img src="images/fna.png" alt="fna" width=90%/>
+                </div>
+
+                <div id = "soundCloud"> 
+                    <h1>Sound Cloud Links</br></h1>
+                    Coming Soon
+                </div>
             </div>    
         </div>
         
@@ -103,6 +116,8 @@
                 document.getElementById("spouse").hidden = true;
                 document.getElementById("no").hidden = true;
                 document.getElementById("whatCompany").hidden = true;
+                document.getElementById("fna").hidden = true;
+                document.getElementById("soundCloud").hidden = true;
 
               $("#ethordButton").click(function(){
                   $("#ethord").toggle();
@@ -110,6 +125,8 @@
                   $("#spouse").hide();
                   $("#no").hide();
                   $("#whatCompany").hide();
+                  $("#fna").hide();
+                  $("#soundCloud").hide();
               });
 
               $("#whatYouDoButton").click(function(){
@@ -118,6 +135,8 @@
                   $("#spouse").hide();
                   $("#no").hide();
                   $("#whatCompany").hide();
+                  $("#fna").hide();
+                  $("#soundCloud").hide();
               });
 
               $("#spouseButton").click(function(){
@@ -126,6 +145,8 @@
                   $("#whatYouDo").hide();
                   $("#no").hide();
                   $("#whatCompany").hide();
+                  $("#fna").hide();
+                  $("#soundCloud").hide();
               });
 
               $("#noButton").click(function(){
@@ -135,6 +156,8 @@
                   $("#whatYouDo").hide();
                   $("#spouse").hide();
                   $("#whatCompany").hide();
+                  $("#fna").hide();
+                  $("#soundCloud").hide();
               });
 
               $("#whatCompanyButton").click(function(){
@@ -143,6 +166,30 @@
                 $("#ethord").hide();
                 $("#spouse").hide();
                 $("#no").hide();
+                $("#fna").hide();
+                $("#soundCloud").hide();
+              });
+
+              $("#fnaButton").click(function(){
+                  $("#fna").toggle();                  
+                  $("#whatYouDo").hide();
+                  $("#ethord").hide();
+                  $("#whatYouDo").hide();
+                  $("#spouse").hide();
+                  $("#whatCompany").hide();
+                  $("#no").hide();
+                  $("#soundCloud").hide();
+              });
+
+              $("#soundCloudButton").click(function(){
+                  $("#soundCloud").toggle();                  
+                  $("#whatYouDo").hide();
+                  $("#ethord").hide();
+                  $("#whatYouDo").hide();
+                  $("#spouse").hide();
+                  $("#whatCompany").hide();
+                  $("#no").hide();
+                  $("#fna").hide();
               });
             });
         </script>
