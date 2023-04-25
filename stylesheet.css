@@ -1,0 +1,105 @@
+/* Make the page use the entire screen */
+
+html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #606060;
+}
+
+/* White rectangle in the middle of the screen */
+
+#wrapper{
+    height:99%;
+    width: 99%; 
+    margin: 0, auto;
+    margin-top: -30%;
+}
+
+#header, h1{
+    margin: 20vw, auto;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: black;
+    text-shadow: green 5px 5px 10px;
+    font-size: 18vw;
+}
+
+hr {
+    margin: 0, auto;
+    margin-top: 12%;
+    padding: 0.1%;
+    height: 1%;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(60%, black));
+}
+
+h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+#main-nav{
+    margin: 0, auto;
+    font-size: 1.1vw;
+    text-align: center;
+    
+}
+
+.button{
+    margin: 0.3%;
+    padding: -90%;
+    border-radius: 25%;
+    background-color: white;
+    align-content: center;
+}
+
+.button:hover{
+    background-color: lawngreen;  
+}
+
+.button:focus{
+    background-color: lawngreen;
+}
+
+
+#display{
+    width: 98%;
+    height: 80%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;
+    margin: 1%;
+    overflow: scroll;
+}
+
+#presentationDisplay, a{
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#presentationDownloadButton{
+    margin: 3%;
+    padding: -90%;
+    border-radius: 25%;
+    background-color: white;
+    align-content: center;
+    display: inline-block;
+    font-size: 4vw;
+}
+
+#presentationDownloadButton:hover{
+    background-color: lawngreen;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LEGENDS</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+
+    <body>
+        <!--start of wrapper-->
+        <div id = "wrapper">
+            <!--start of header-->
+            <div id = "header">
+                <h1> LEGENDS </h1>
+            </div>
+            <!--end of header-->
+            
+            <!--start of description-->
+            <div id = "description">
+                <hr>
+                <h2> Welcome to the Legends Basehop's resource center!</h2>
+            </div>
+            <!--end of description-->
+            
+            <!--start of main navigation-->
+            <div id = "main-nav">
+                <button id = "licensingButton" class = "button">LICENSING</button>
+                <button id = "prospectingButton" class = "button">PROSPECTING</button>
+                <button id = "settingApptsButton" class = "button">SETTING APPOINTMENTS</button>
+                <button id = "presentationButton" class = "button">PRESENTATION</button>
+                <button id = "overcomingObjectionsButton" class = "button">OVERCOMING OBJECTIONS</button>
+                <button id = "recruitingButton" class = "button">RECRUITING</button>
+                <button id = "pandsButton" class = "button">PRODUCTS & SERVICES</button>
+                <button id = "faststartButton" class = "button">FAST START</button>
+            </div>
+            <!--end of main navigation-->
+            
+            <!--start of display-->
+            <div id = "display">
+                <!--start of licensing display-->
+                <div id = "licensingDisplay">
+                    Welcome to Licensing
+                </div>
+                <!--end of licensing display-->
+                
+                <!--start of prospecting display-->
+                <div id = "prospectingDisplay">
+                    Welcome to Prospecting
+                </div>
+                <!--end of prospecting display-->
+                
+                <!--start of seting appointments display-->
+                <div id = "settingApptsDisplay">
+                    Welcome to Setting Appointments
+                </div>
+                <!--end of setting appointments display-->
+                
+                <!--start of presentation display-->
+                <div id = "presentationDisplay">
+                    <ul><button id = "presentationDownloadButton"> <a href="preso/pc/LegendsPresentation.pptx" download="LegendsPresentation">PC</a></button></ul>
+                    
+                    <ul><button id = "presentationDownloadButton"> <a href="preso/mac/LegendsPresentation.zip" download="LegendsPresentation">Mac</a></button></ul>
+                </div>
+                <!--end of presentation display-->
+                
+                <!--start of overcoming objections display-->
+                <div id = "overcomingObjectionsDisplay">
+                    Welcome to Overcoming Objections
+                </div>
+                <!--end of overcoming objections display-->
+                
+                <!--start of recruiting display-->
+                <div id = "recruitingDisplay">
+                    Welcome to Recruiting
+                </div>
+                <!--end of recruiting display-->
+                
+                <!--start of products and services display-->
+                <div id = "pandsDisplay">
+                    Welcome to Recruiting
+                </div>
+                <!--end of products and services display-->
+                
+                <!--start of fast start display-->
+                <div id = "fastStartDisplay">
+                    Welcome to Fast Start
+                </div>
+                <!--end of licensing display-->
+            </div>
+            <!--end of display-->
+            
+        <!--javascript-->
+        <script>
+            $(document).ready(function(){
+                /*start of main-nav buttons*/
+                document.getElementById("main-nav").hidden = false;
+                document.getElementById("licensingButton").hidden = false;
+                document.getElementById("prospectingButton").hidden = false;
+                document.getElementById("settingApptsButton").hidden = false;
+                document.getElementById("presentationButton").hidden = false;
+                document.getElementById("overcomingObjectionsButton").hidden = false;
+                document.getElementById("recruitingButton").hidden = false;
+                document.getElementById("pandsButton").hidden = false;
+                document.getElementById("faststartButton").hidden = false;
+                /*end of main-nav buttons*/
+                
+                /*start of display*/
+                document.getElementById("licensingDisplay").hidden = true;
+                document.getElementById("prospectingDisplay").hidden = true;
+                document.getElementById("settingApptsDisplay").hidden = true;
+                document.getElementById("presentationDisplay").hidden = true;
+                document.getElementById("overcomingObjectionsDisplay").hidden = true;
+                document.getElementById("recruitingDisplay").hidden = true;
+                document.getElementById("pandsDisplay").hidden = true;
+                document.getElementById("fastStartDisplay").hidden=true;
+                /*end of display*/
+                
+                /*start of if licensing button is clicked*/
+                $("#licensingButton").click(function(){
+                    $("#licensingDisplay").toggle();
+                    $("#prospectingDisplay").hide();
+                    $("#settingApptsDisplay").hide();
+                    $("#presentationDisplay").hide();
+                    $("#overcomingObjectionsDisplay").hide();
+                    $("#recruitingDisplay").hide();
+                    $("#pandsDisplay").hide();
+                    $("#fastStartDisplay").hide();
+                })
+                /*end of if licensing button is clicked*/
+                
+                /*start of if prospecting button is clicked*/
+                $("#prospectingButton").click(function(){
+                    $("#licensingDisplay").hide();
+                    $("#prospectingDisplay").toggle();
+                    $("#settingApptsDisplay").hide();
+                    $("#presentationDisplay").hide();
+                    $("#overcomingObjectionsDisplay").hide();
+                    $("#recruitingDisplay").hide();
+                    $("#pandsDisplay").hide();
+                    $("#fastStartDisplay").hide();
+                })
+                /*end of if prospecting button is clicked*/
+                
+                /*start of if setting appts button is clicked*/
+                $("#settingApptsButton").click(function(){
+                    $("#licensingDisplay").hide();
+                    $("#prospectingDisplay").hide();
+                    $("#settingApptsDisplay").toggle();
+                    $("#presentationDisplay").hide();
+                    $("#overcomingObjectionsDisplay").hide();
+                    $("#recruitingDisplay").hide();
+                    $("#pandsDisplay").hide();
+                    $("#fastStartDisplay").hide();
+                })
+                /*end of if setting appts button is clicked*/
+                
+                /*start of if presentation button is clicked*/
+                $("#presentationButton").click(function(){
+                    $("#licensingDisplay").hide();
+                    $("#prospectingDisplay").hide();
+                    $("#settingApptsDisplay").hide();
+                    $("#presentationDisplay").toggle();
+                    $("#overcomingObjectionsDisplay").hide();
+                    $("#recruitingDisplay").hide();
+                    $("#pandsDisplay").hide();
+                    $("#fastStartDisplay").hide();
+                })
+                /*end of if presentation button is clicked*/
+                
+                
+                /*start of if overcoming objections button is clicked*/
+                $("#overcomingObjectionsButton").click(function(){
+                    $("#licensingDisplay").hide();
+                    $("#prospectingDisplay").hide();
+                    $("#settingApptsDisplay").hide();
+                    $("#presentationDisplay").hide();
+                    $("#overcomingObjectionsDisplay").toggle();
+                    $("#recruitingDisplay").hide();
+                    $("#pandsDisplay").hide();
+                    $("#fastStartDisplay").hide();
+                })
+                /*end of if overcoming objections button is clicked*/
+                
+                /*start of if recruiting button is clicked*/
+                $("#recruitingButton").click(function(){
+                    $("#licensingDisplay").hide();
+                    $("#prospectingDisplay").hide();
+                    $("#settingApptsDisplay").hide();
+                    $("#presentationDisplay").hide();
+                    $("#overcomingObjectionsDisplay").hide();
+                    $("#recruitingDisplay").toggle();
+                    $("#pandsDisplay").hide();
+                    $("#fastStartDisplay").hide();
+                })
+                /*end of if recruiting button is clicked*/
+                
+                /*start of if pandS button is clicked*/
+                $("#pandsButton").click(function(){
+                    $("#licensingDisplay").hide();
+                    $("#prospectingDisplay").hide();
+                    $("#settingApptsDisplay").hide();
+                    $("#presentationDisplay").hide();
+                    $("#overcomingObjectionsDisplay").hide();
+                    $("#recruitingDisplay").hide();
+                    $("#pandsDisplay").toggle();
+                    $("#fastStartDisplay").hide();
+                })
+                /*end of if pands button is clicked*/
+                
+                /*start of if fast start button is clicked*/
+                $("#fastStart").click(function(){
+                    $("#licensingDisplay").hide();
+                    $("#prospectingDisplay").hide();
+                    $("#settingApptsDisplay").hide();
+                    $("#presentationDisplay").hide();
+                    $("#overcomingObjectionsDisplay").hide();
+                    $("#recruitingDisplay").hide();
+                    $("#pandsDisplay").hide();
+                    $("#fastStartDisplay").toggle();
+                })
+                /*end of if fast start button is clicked*/
+               
+            });
+        </script>
+        
+        </div>
+        <!--end of wrapper-->
+    </body>
+</html>
